@@ -1,0 +1,24 @@
+{
+  "name": "html5-audio-controls",
+  "version": "1.0.0",
+  "description": "Javascript and SVG controls for controlling an html5 audio element",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esonderegger/html5-audio-controls.git"
+  },
+  "keywords": [
+    "audio",
+    "html5",
+    "controls"
+  ],
+  "author": "Evan Sonderegger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esonderegger/html5-audio-controls/issues"
+  },
+  "homepage": "https://github.com/esonderegger/html5-audio-controls#readme"
+}
