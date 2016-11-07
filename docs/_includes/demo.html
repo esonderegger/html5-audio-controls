@@ -1,0 +1,14 @@
+<div>
+  <div id="my-audio-player">
+    <audio id="my-audio" preload="metadata">
+      <source src="audio/hello.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+  <script src="https://assets.rpy.xyz/html5-audio-controls.min.js"></script>
+  <script>
+    var myElement = document.getElementById('my-audio-player');
+    var color1 = '#616161';
+    var color2 = '#bdbdbd';
+    html5AudioControls.createControls(myElement, color1, color2);
+  </script>
+</div>
