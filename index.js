@@ -94,6 +94,10 @@ var html5AudioControls = (function() {
   function createControls(domElement, color1, color2) {
     var elementWidth = domElement.clientWidth;
     var elementHeight = domElement.clientHeight;
+    if (!elementHeight) {
+      domElement.style.height = '2em';
+      elementHeight = domElement.clientHeight;
+    }
     domElement.style.position = 'relative';
     var audioElement = domElement.getElementsByTagName('audio')[0];
     var playPause = createPlayPause(domElement, elementHeight, color1);
