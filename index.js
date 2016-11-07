@@ -117,30 +117,37 @@ var html5AudioControls = (function() {
       }
     }, false);
 
-    var timePlayed = createCounter(domElement, elementHeight, elementHeight,
-                                   elementHeight, color1);
+    var timePlayed = createCounter(domElement,
+                                   elementHeight,
+                                   elementHeight + 20,
+                                   elementHeight,
+                                   color1);
     timePlayed.textContent = prettyTime(audioElement.currentTime);
-    var timeTotal = createCounter(domElement, elementHeight, elementHeight,
-                                  elementWidth - elementHeight, color1);
+    var timeTotal = createCounter(domElement,
+                                  elementHeight,
+                                  elementHeight,
+                                  elementWidth - elementHeight - 2,
+                                  color1);
     timeTotal.textContent = prettyTime(audioElement.duration);
 
     var progressHeight = 8;
-    var progressWidth = elementWidth - (elementHeight * 3);
+    var progressWidth = elementWidth - (elementHeight * 3 + 33);
     var progressTop = elementHeight / 2 - progressHeight / 2;
-    var progressLeft = elementHeight * 2;
+    var progressLeft = elementHeight * 2 + 20;
 
     var progressTotal = createBlock(domElement, progressHeight, progressWidth,
                                     progressTop, progressLeft, color2);
     var progressPlayed = createBlock(domElement, progressHeight, 0, progressTop,
                                      progressLeft, color1);
 
+    audioElement.addEventListener('durationchange', function() {
+      timeTotal.textContent = prettyTime(audioElement.duration);
+    });
     audioElement.addEventListener('timeupdate', function() {
       var playedRatio = audioElement.currentTime / audioElement.duration;
       progressPlayed.style.width = playedRatio * progressWidth + 'px';
       timePlayed.textContent = prettyTime(audioElement.currentTime);
-      timeTotal.textContent = prettyTime(audioElement.duration);
     });
-
     audioElement.addEventListener('ended', function() {
       playPause.innerHTML = playSvg;
     });
