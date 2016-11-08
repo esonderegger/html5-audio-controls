@@ -4,7 +4,7 @@ Super-simple controls for your html5 audio elements.
 
 ## Demo
 
-{% include demo.html %}
+See [https://esonderegger.github.io/html5-audio-controls](https://esonderegger.github.io/html5-audio-controls) for a demo.
 
 ## Usage (basic)
 
