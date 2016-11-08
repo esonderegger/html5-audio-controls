@@ -1,6 +1,6 @@
 {
   "name": "html5-audio-controls",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Javascript and SVG controls for controlling an html5 audio element",
   "main": "index.js",
   "scripts": {
