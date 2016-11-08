@@ -4,7 +4,8 @@
   "description": "Javascript and SVG controls for controlling an html5 audio element",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "node minify.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/esonderegger/html5-audio-controls/issues"
   },
-  "homepage": "https://github.com/esonderegger/html5-audio-controls#readme"
+  "homepage": "https://github.com/esonderegger/html5-audio-controls#readme",
+  "devDependencies": {
+    "uglify-js": "^2.7.4"
+  }
 }
