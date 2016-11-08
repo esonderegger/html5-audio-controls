@@ -51,3 +51,11 @@ Finally, use as you would in the above example:
     html5AudioControls.createControls(myElement, color1, color2);
 
 (Note: the markup remains the same as in the basic example)
+
+## Contributing
+
+Contributions are welcome! I'd love to hear any ideas for how these controls could be more user-friendly as well as about any bugs or unclear documentation. If you are at all interested in this project, please create an issue or pull request on this project's [github page](https://github.com/esonderegger/html5-audio-controls).
+
+## Copyright and license
+
+Code and documentation copyright 2016 [Evan Sonderegger](https://rpy.xyz) and released under the [MIT License](https://github.com/esonderegger/html5-audio-controls/blob/master/LICENSE).
